@@ -16,8 +16,6 @@
 ## 기술 스택
 
 | Python | 
-| :--------: | 
-|   ![python]  |
 
 <br>
 
@@ -35,13 +33,14 @@
 ### 기능 1 
   코드
   op = Options()
-  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe" #설치한 드라이브의 위치 넣기
+  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe"
   op.add_argument(f"webdriver.chrome.driver={ser}")
   dr = webdriver.Chrome(options=op)
   
   url = "https://newsac-application.kr/"
   dr.get(url)
   time.sleep(1)
+  
   설명
   webdriver사용해서 수동으로 chrome driver 주소 설정 후 "https://newsac-application.kr/" 페이지 오픈
   
@@ -62,12 +61,13 @@
         href = element.get_attribute('href')
         if href is not None:
             rinks.append(href)
+            
     설명
     지역 선택하기 ("강원/충청권")
     더보기 버튼 누르기
     페이지에서 링크만 가져와서 rink 리스트에 넣어
 
-### 기능 3 - yeachan_font_PJ.py
+### 기능 3 
     코드
     for curl in rinks:
       dr.get(curl)
@@ -103,6 +103,7 @@
         }
         send = requests.patch('http://13.124.76.164:8000/sites/'+str(tmp)+'/', data=dic)
         tmp+=1
+        
     설명
     링크 페이지 열고 그 페이지에서 필요한 정보를 가져와서 딕셔너리에 저장
     저장한 정보를 requests를 사용해서 patch로 전송
@@ -120,6 +121,7 @@
         tmp+=1
     else:
         break
+        
     설명
     tmp값이 조건보다 작은경우 남은 값들에는 None 값 넣어서 ruequsts를 사용해서 patch로 전송
   
