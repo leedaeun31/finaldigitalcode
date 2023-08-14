@@ -25,14 +25,14 @@
 
 ### 기능 1 
   코드<br>
-  op = Options()
-  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe" #설치한 드라이브의 위치 넣기
-  op.add_argument(f"webdriver.chrome.driver={ser}")
-  dr = webdriver.Chrome(options=op)
+  op = Options()<br>
+  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe"<br>
+  op.add_argument(f"webdriver.chrome.driver={ser}")<br>
+  dr = webdriver.Chrome(options=op)<br>
 
-  url = "https://newsac-application.kr/"
-  dr.get(url)
-  time.sleep(1)
+  url = "https://newsac-application.kr/"<br>
+  dr.get(url)<br>
+  time.sleep(1)<br>
   
   설명<br>
   webdriver사용해서 수동으로 chrome driver 주소 설정 후 "https://newsac-application.kr/" 페이지 오픈
