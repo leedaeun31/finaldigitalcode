@@ -1,11 +1,4 @@
-# Font_Generater_Project
-
-<p align="center">
-  <br>
-  <img src="./img/img1.png">
-  <br>
-  <img src="./img/img2.png">
-</p>
+# webscraping_Project
 
 ## 프로젝트 소개
   -디지털 새싹("https://newsac-application.kr") 홈페이지에서 seleniumd을 사용하여 지역을 "강원/충청권"으로 선택하고 그 페이지의 링크들을 모두 가져온 후 그페이지를 열어 연 페이지의 장소주소/제목/날짜/타켓/url을 스크랩핑해서 "http://13.124.76.164:8000/sites/"에 request를 사용해서 데이터를 전송해주는 프로그램입니다. 
@@ -31,7 +24,7 @@
 ## webscraping.py 구현 기능
 
 ### 기능 1 
-  코드
+  코드<br>
   op = Options()
   ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe"
   op.add_argument(f"webdriver.chrome.driver={ser}")
@@ -41,7 +34,7 @@
   dr.get(url)
   time.sleep(1)
   
-  설명
+  설명<br>
   webdriver사용해서 수동으로 chrome driver 주소 설정 후 "https://newsac-application.kr/" 페이지 오픈
   
 ###  기능 2
