@@ -26,10 +26,10 @@
 ### 기능 1 
   코드<br>
   op = Options()
-  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe"
+  ser = "C:\\Users\\SAMSUNG\\Downloads\\chromedriver-win32\\chromedriver.exe" #설치한 드라이브의 위치 넣기
   op.add_argument(f"webdriver.chrome.driver={ser}")
   dr = webdriver.Chrome(options=op)
-  
+
   url = "https://newsac-application.kr/"
   dr.get(url)
   time.sleep(1)
