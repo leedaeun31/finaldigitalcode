@@ -35,7 +35,7 @@
   time.sleep(1)<br>
   
   설명<br>
-  webdriver사용해서 수동으로 chrome driver 주소 설정 후 "https://newsac-application.kr/" 페이지 오픈
+  -webdriver사용해서 수동으로 chrome driver 주소 설정 후 "https://newsac-application.kr/" 페이지 오픈
   
 ###  기능 2
     코드
@@ -56,9 +56,9 @@
             rinks.append(href)
             
     설명
-    지역 선택하기 ("강원/충청권")
-    더보기 버튼 누르기
-    페이지에서 링크만 가져와서 rink 리스트에 넣어
+    -지역 선택하기 ("강원/충청권")
+    -더보기 버튼 누르기
+    -페이지에서 링크만 가져와서 rink 리스트에 넣어
 
 ### 기능 3 
     코드
@@ -98,8 +98,8 @@
         tmp+=1
         
     설명
-    링크 페이지 열고 그 페이지에서 필요한 정보를 가져와서 딕셔너리에 저장
-    저장한 정보를 requests를 사용해서 patch로 전송
+    -링크 페이지 열고 그 페이지에서 필요한 정보를 가져와서 딕셔너리에 저장
+    -저장한 정보를 requests를 사용해서 patch로 전송
   
 ### 기능 4 
     코드
@@ -116,7 +116,7 @@
         break
         
     설명
-    tmp값이 조건보다 작은경우 남은 값들에는 None 값 넣어서 ruequsts를 사용해서 patch로 전송
+    -tmp값이 조건보다 작은경우 남은 값들에는 None 값 넣어서 ruequsts를 사용해서 patch로 전송
   
 <br>
 
@@ -130,5 +130,4 @@
 
 <!-- Stack Icon Refernces -->
 
-[python]: /img/python.png
 
